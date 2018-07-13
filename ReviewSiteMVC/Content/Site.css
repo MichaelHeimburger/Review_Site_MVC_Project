@@ -22,3 +22,93 @@ select,
 textarea {
     max-width: 280px;
 }
+/*-------------------------------------------MY STYLING BELOW-------------------------------------------------------*/
+/*-------------------------------------------STYLING FOR ALL PAGES-------------------------------------------------------*/
+#mhlogo{
+    height:20px;
+}
+.row{
+    margin:0;
+}
+#allcontent{
+    margin:0;
+    padding:0;
+}
+#bgimg {
+z-index:-1;
+width:100%;
+height:100%;
+position:fixed;
+}
+#logo{
+    height:8vw;
+    max-height:80px;
+    background-color:white;
+}
+.navbar-expand-md{
+    background-color:cornflowerblue;
+    display:flex;
+    justify-content:space-between;
+}
+#navitem >a{
+    margin-right:4vw;
+    color:black;
+    padding-top:100%;
+    padding-bottom:100%;
+}
+footer{
+    background-color:white;
+    margin:0;
+    padding:0;
+    height:100%;
+}
+body{
+    height:auto;
+    margin:0;
+    padding:0;
+}
+/*-------------------------------------------STYLING INDEX  HOME PAGE-------------------------------------------------------*/
+
+.topimageindex {
+    background-image: url('../Images/newyorkimg.jpg');
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    margin:0;
+}
+#indexheadertext{
+    color:white;
+}
+.indexrow2{
+
+    justify-content:center;
+}
+#indexrow2header{
+    padding:2vw;
+}
+.indexrow3{
+    height:50vw;
+    background-color:white;
+    overflow:hidden;
+}
+.indexrow3col{
+    background-color:whitesmoke;
+    box-shadow: 5px 5px 5px black;
+    height:auto;
+    margin:2vw;
+    overflow:hidden;
+    display:flex;
+    justify-content:space-between;;
+    flex-direction:column;
+    font-size:1rem;
+}
+#indexrow3img{
+    border:3px solid white;
+    height:20vw;
+}
