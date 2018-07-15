@@ -3,56 +3,27 @@
 @{
     ViewBag.Title = "Details";
 }
-
-<h2>Details</h2>
-
-<div>
-    <h4>Review</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.CityCategory.CityName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CityCategory.CityName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ReviewTitle)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ReviewTitle)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ReviewDescription)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ReviewDescription)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Rating)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Rating)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ReviewerName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ReviewerName)
-        </dd>
-
-    </dl>
+<div class="row reveiwdetailheader">
+    @Html.DisplayFor(model => model.CityCategory.CityName)
+    </div>
+<div class="row reveiwdetailheader">
+    <i> @Html.DisplayFor(model => model.ReviewTitle)</i>
 </div>
-<p>
+<div class="row reveiwdetaildetails">
+    <div class="col-6 reveiwdetailimg">
+        <img src="~/Images/newyorkimg.jpg"/>
+    </div>
+    <div class="col-6 reveiwdetaildetailstext">
+        
+
+        <p> <b>Description:</b>  @Html.DisplayFor(model => model.ReviewDescription)</p>
+        <p><b>Rating:</b> @Html.DisplayFor(model => model.Rating)  </p>
+        <p><b>Review By:</b>  @Html.DisplayFor(model => model.ReviewerName) </p>
+    </div>
+</div>
+
+
+<p id="reveiwdetaillinks">
     @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

@@ -53,8 +53,7 @@ position:fixed;
 #navitem >a{
     margin-right:4vw;
     color:black;
-    padding-top:100%;
-    padding-bottom:100%;
+ 
 }
 footer{
     background-color:white;
@@ -82,7 +81,8 @@ body{
     align-content:center;
     margin:0;
 }
-#indexheadertext{
+#indexheadertext {
+
     color:white;
 }
 .indexrow2{
@@ -93,7 +93,7 @@ body{
     padding:2vw;
 }
 .indexrow3{
-    height:50vw;
+    height:auto;
     background-color:white;
     overflow:hidden;
 }
@@ -109,23 +109,29 @@ body{
     font-size:1rem;
 }
 #indexrow3img{
-    border:3px solid white;
+    border:5px solid wheat;
     height:20vw;
 }
 /*-------------------------------------------STYLING INDEX REVIEW PAGE-------------------------------------------------------*/
+#reviewindexcreate{
+
+}
 .rolodex{
-    width:100%;
+    max-width:100%;
     display:flex;
+    flex-wrap:wrap;
 flex-direction:row;
 }
 .carda {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width:20vw;
-    margin:1vw;
+    width: 20vw;
+    margin: 1vw;
+    min-width: 200px;
+    background-color: whitesmoke;
 }
 .carda > img{
-    width:20vw;
+    width:100%;
 }
 
     .carda:hover {
@@ -133,6 +139,31 @@ flex-direction:row;
     }
 
 .cardtext {
-    background-color:whitesmoke;
     padding: 2px 16px;
+}
+
+/*-------------------------------------------STYLING DETAILS REVIEW PAGE-------------------------------------------------------*/
+.reveiwdetailheader {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: AcmeFont;
+    background-color: whitesmoke;
+}
+
+.reveiwdetailimg > img {
+    width: 100%;
+    border: solid 20px black;
+}
+.reveiwdetaildetails{
+    background-color:whitesmoke;
+}
+.reveiwdetaildetailstext{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#reveiwdetaillinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

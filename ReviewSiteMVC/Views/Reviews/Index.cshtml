@@ -5,20 +5,28 @@
 }
 
 
-<p>
+
+
+
+
+
+
+
+
+<button id="reviewindexcreate" href="">
     @Html.ActionLink("Write Your Review Today", "Create")
-</p>
+</button>
 <div class="rolodex">
     @foreach (var item in Model)
     {
         <div class="carda">
-            <img src="~/Images/newyorkimg.jpg">
+            <img class="cardimg" src="~/Images/newyorkimg.jpg">
             <div class="cardtext">
                 <h4><b>@Html.DisplayFor(modelItem => item.ReviewTitle)</b></h4>
                 <h4><b>@Html.DisplayFor(modelItem => item.CityCategory.CityName)</b></h4>
                 <p>@Html.DisplayFor(modelItem => item.Rating)/100</p>
-                <p>@Html.DisplayFor(modelItem => item.ReviewerName)</p>
-                <p> @Html.ActionLink("Read More - >", "Details", new { id = item.CityID })</p>
+                <p><i>Review By: @Html.DisplayFor(modelItem => item.ReviewerName)</i></p>
+                <p> @Html.ActionLink("Read More - >", "Details", new { id = item.ReviewID })</p>
             </div>
         </div>
     }
