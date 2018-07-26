@@ -107,6 +107,7 @@ body{
     justify-content:space-between;;
     flex-direction:column;
     font-size:1rem;
+    min-width:200px;
 }
 #indexrow3img{
     border:5px solid wheat;
